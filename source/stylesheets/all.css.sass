@@ -1,6 +1,12 @@
+@mixin link-base($color)
+  color: $color
+  text-decoration: none
+
+@mixin link-hover($color)
+  color: $color
+  text-decoration: underline
 
 body
-  //background: #d4d4d4
   background: #FFFFFF
   text-align: center
   font-family: sans-serif
@@ -10,11 +16,22 @@ body
 h1
   font-size: 50px
 
+a:link
+  @include link-base(#000000)
+a:visited
+  @include link-base(#000000)
+a:hover
+  @include link-hover(#000000)
+a:active
+  @include link-hover(#000000)
+
+
 .header
   text-align: left
   border-bottom: medium solid #000000
-  margin-left: 5%
-  margin-right: 5%
+  margin:
+    left: 5%
+    right: 5%
 
 .main
   margin-top: 10%
@@ -29,17 +46,26 @@ h1
   clear: left
   color: #FFFFFF
   background: #000000
-  margin-left: 20%
+  margin:
+    left: 20%
+    right: 20%
   position: relative
   float: right
-  margin-right: 20%
   padding: 10px
-
+  a:link
+    @include link-base(#FFFFFF)
+  a:visited
+    @include link-base(#FFFFFF)
+  a:hover
+    @include link-hover(#FFFFFF)
+  a:active
+    @include link-hover(#FFFFFF)
 
 footer
   clear: both
-  font-weight: 200
-  font-size: x-small
+  font:
+    weight: 200
+    size: x-small
   position: absolute
   bottom: 0
   width: 100%

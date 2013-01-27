@@ -4,7 +4,7 @@ title: Icarian Productions
 
 .main
   .left-content
-    %h1 My name is Chris Brodt,
+    %h1= "My name is #{link_to 'Chris Brodt', '/chrisbrodt.html'},"
   .right-content
-    %h1 I build things without fear.
+    %h1= "I build things without #{link_to 'fear', '/fear.html'}."
 
