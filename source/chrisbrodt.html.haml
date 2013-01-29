@@ -1,3 +1,7 @@
+---
+title: Curriculum Vitae
+---
+
 %h2 Curriculum Vitae
 .center-content
   %h3 Summary
@@ -17,23 +21,62 @@
     %li High Availability and Scalable solutions.
     %li Language design and theory.
     %li Test Driven Development (TDD)
-    %li SDLC.  More precisely, I'm interested in leveraging technology to make the development process more efficent.
+    %li SDLC.  More precisely, I'm interested in leveraging technology to make the development process more efficient.
 
   %h3 Skills
   %hr
-  %h4 Languages
+  %h4{style:"text-align:center;"} Languages
   %ul
     %li Proficient in: Ruby, Java, JavaScript, PHP, Python, SQL, Bash.
     %li Familiar with: C/C++, LISP, Scala.
-  %h4 Technologies
+  %h4{style:"text-align:center;"} Technologies
   %ul
     %li Databases: Oracle, MySQL, PostgreSQL, SimpleDB.
     %li Applications: Tomcat, Apache WebServer, Nginx, Amazon Web Services.
     %li Platforms: Linux, Solaris 8+, Android, Mac OS X
     %li Frameworks: Guice, Ruby on Rails, ExtJS, Zend, Pylons, Pyramid, Middleman
+  %h3 Projects and Online Profiles
+  %hr
+  %ul
+    %li= link_to "Jslint-Rb, A cross-platform javascript linter built with Ruby", "https://github.com/uberbrodt/jslint-rb" 
+    %li= link_to "Github", "https://github.com/uberbrodt"
 
   %h3 Experience
   %hr
+  %h5= "Software Engineer@#{link_to 'Path.To', 'http://path.to/'} 2012-Present"
+  %p
+    Working with Heroku and AWS, we have a SimpleDB backed service layer that we communicate with.  I'm also working with various algorithms to match
+    potential applicants to jobs.
+  %h5= "Software Architect/Engineer@#{link_to 'TrueNorth Solutions', "http://tntech.biz/"} 2011-2012"
+  %p
+    TrueNorth Solutions develops a CRM/ERP/Web Enablement platform written in Ruby on Rails.  I assisted in the development of the
+    core framework, as well as designing and implementing solutions for clients.
+  %ul
+    %li Led a successful effort to implement automated testing facilities into each of our Rails Engines.
+    %li Built a commandline tool to automate certain development tasks and distributed to the team.
+    %li Wrote a program that produced dynamic "offers", using a rules engine.  I designed and implemented a DSL for the rules and the customer context they eval'd against.
+    %li Re-wrote parts of a PHPMyAdmin style Rails app to use the ARel AST program.
+  %h5= "Manager, CRM Software Development@#{link_to 'Web.com', "http://web.com/"}  2008-2011"
+  %p
+    Began as a junior software engineer.  Helped build and maintain a PHP/ExtJS CRM with a legacy Oracle backend, along with a legacy Java Webservices and batch system.
+    Eventually managed a team of around 4 engineers and worked closely with management to gather requirements and schedule delivery, while still remaining "hands-on" with
+    the code base.
+  %h5= "Web Development Intern@#{link_to "Onesite.com/Catalog.com", "http://onesite.com/"} 2008"
+  %p
+    Worked with PHP and MySQL to develop a social networking platform.
+  %h5= "Contract Programmer@#{link_to "Farmers Insurance", "http://farmers.com"}"
+  %p
+    Created reports with Classic ASP and ASP.NET/C# 2.0.  Also created integrations with Siebel CRM
+  %h5= "Student Programmer@#{link_to "University of Oklahoma Libraries Systems", "http://libraries.ou.edu"}"
+  %p
+    Performed some Linux server administration and worked with a variety of proprietary systems (SIRSI, barcode scanners, etc).  Eventually did Web Development using 
+    Classic ASP with an Oracle backend.
+  %h3 Education
+  %hr
+  %p
+    Pursued a Bachelors in Political Science with minors in Philosophy and History from 2004-2008
+
+
 
 
 

@@ -6,12 +6,17 @@
   color: $color
   text-decoration: underline
 
-body
+html,body
   background: #FFFFFF
   text-align: center
   font-family: sans-serif
   height: 100%
+  margin: 0
+  padding: 0
 
+.wrapper
+  min-height: 100%
+  position: relative
 
 h1
   font-size: 40px
@@ -35,19 +40,15 @@ a:active
 
 .main
   margin-top: 10%
-  position: relative
+  padding-bottom: 60px
 
 .center-content
+  text-align: left
   margin:
     left: 20%
     right: 20%
   position: relative
-  h3
-    text-align: left
-  p
-    text-align: left
-  li
-    text-align: left
+  padding-bottom: 80px
   hr
     border: none
     background-color: #ccc
